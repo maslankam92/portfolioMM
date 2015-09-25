@@ -1,0 +1,692 @@
+/* ########  GENERAL STYLES   ########### */
+
+html, body {
+	height: 100%;
+	width: 100%;
+	font-family: 'Roboto Condensed', sans-serif;
+	color: #333;
+}
+
+
+::selection {
+  background: #1abc9c;
+}
+
+*,*:before,*:after {
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+} 
+
+a {
+	text-decoration: none;
+	color: #000;
+}
+
+ol, ul {
+	list-style-type: none;
+	margin: 0;
+	padding: 0;
+	font-size: 1.2em;
+}
+
+
+h1 {
+	font-family: 'Lobster', cursive;
+	font-weight: lighter;
+	color: #2ecc71;
+	text-shadow: 2px 2px 1px #333;
+}
+
+h2, h3 {
+	font-family: 'Comfortaa', cursive;
+}
+
+h2 {
+	font-size: 2em;
+}
+
+h3 {
+	font-size: 1.6em;
+}
+
+p {
+	font-size: 1.2em;
+}
+
+blockquote {
+	font-family: 'Lobster', cursive;
+	font-weight: lighter;
+	text-align: right;
+	margin-top: 40px;
+	padding: 0px 10px 10px 0 ;
+	border-right: 2px solid #2ecc71;
+	border-bottom: 2px solid #2ecc71;
+}
+
+.clearfix:after {
+	content: '';
+	display: block;
+	clear: both;
+
+}
+
+/* ########  NAVIGATION STYLES   ########### */
+
+#logo {
+	font-family: 'Squada One', cursive;
+	font-size: 4em;
+	margin: 0;
+	padding: 10px 0 0;
+}
+
+#logo a {
+	color: #2ecc71;
+}
+
+
+
+
+/* ########  HAMBURGER-NAVIGATION   ########### */
+
+
+
+
+/* Navigation Menu - Background */
+.navigation {
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  z-index: 0;
+  
+  list-style: none;
+  background: #27ae60;
+}
+
+/* Navigation Menu - List items */
+.nav-item {
+  width: 200px;
+  border-top: 1px solid #111;
+  border-bottom: 1px solid #000;
+}
+
+.nav-item a {
+  display: block;
+  padding: 1em;
+  color: #fff;
+  font-size: 1.2em;
+  text-decoration: none;
+  transition: color 0.2s, background 0.5s;
+}
+
+.nav-item a:hover {
+  color: black	;
+  background: linear-gradient(135deg, #27ae60 0%,rgba(75,20,20,0.4) 100%);
+}
+
+/* Site Wrapper - Everything that isn't navigation */
+.wrapper {
+  min-height: 100%;
+  min-width: 100%;
+  max-width: 1440px;
+  width: 50%;
+  position: relative;
+  top: 0;
+  bottom: 100%;
+  left: 0;
+  z-index: 1;
+  background: #eee;
+  margin: auto;
+  text-align: center;
+
+}
+
+/* Nav Trigger */
+.nav-trigger {
+  /* hide the checkbox input */
+  position: absolute;
+  clip: rect(0, 0, 0, 0);
+}
+
+label[for="nav-trigger"] {
+  position: fixed;
+  left: 15px; top: 15px;
+  z-index: 2;
+  
+  height: 32px;
+  width: 32px;
+  cursor: pointer;
+  background: url('../images/menu.png');
+}
+
+/* Make the Magic Happen */
+.nav-trigger + label, .wrapper {
+  transition: left 0.2s;
+}
+
+.nav-trigger:checked + label {
+  left: 215px;
+}
+
+.nav-trigger:checked ~ .wrapper {
+  left: 200px;
+  box-shadow: 0 0 5px 5px rgba(0,0,0,0.5);
+}
+
+body {
+    /* Without this, the body has excess horizontal scroll when the menu is open */
+  overflow-x: hidden;
+}
+
+
+
+
+/* ########  HEADER   ########### */
+
+
+
+
+.main-header {
+	background: url('../images/hero02.jpeg') no-repeat top center;
+	background-size: cover;
+	height: 700px;
+	width: 100%;
+	box-shadow: 0px 1px 20px 1px #333;
+}
+
+.main-heading {
+	padding: 50px 0;
+	width: 80%;
+	margin: 0 auto;
+}
+
+.main-heading h1 {
+	font-size: 20vw;
+}
+
+.main-heading p {
+	font-size: 2em;
+	color: #333;
+	background-color: #2ecc71;
+	display: inline-block;
+	padding: 15px;
+}
+
+.main-header img {
+	padding: 50px 0;
+}
+
+
+
+/* ########  SECTION-ABOUT   ########### */
+
+
+.section-about {
+	margin: 100px 0;
+}
+
+.section-about-content {
+	width: 90%;
+	margin: auto;
+	max-width: 1440px;
+
+}
+
+.section-about-content img {
+	width: 80%;
+	max-width: 400px;
+	border-radius: 50%;
+	padding: 40px 0;
+}
+
+.section-about-content span {
+	color: #2ecc71;
+}
+
+.overline {
+	border-top: 2px dotted #2ecc71;
+	color: #333 !important;
+}
+
+
+
+
+/* ########  SECTION-PORTFOLIO   ########### */
+
+
+
+
+.section-portfolio {
+	padding: 100px 0 60px;
+	background: #27ae60;
+	transform: rotate(4deg);
+	width: 140%;
+	margin-left: -20%;
+}
+
+.section-portfolio-content {
+	width: 65%;
+	margin: auto;
+	max-width: 1440px;
+	transform: rotate(-4deg);
+}
+
+/* picture under "PORTFOLIO"*/
+.img-portfolio	 {
+	margin: 40px 0;
+	max-width: 308px;
+	width: 50%;
+}
+
+.btn-view {
+	display: inline-block;
+	padding: 10px 20px;
+	border: 3px solid #27ae60;
+	font-size: 1.3em;
+	margin-top: 30px;
+	color: #27ae60;
+	border-radius: 5px;
+	transition: .2s;
+}
+
+.btn-view:hover {
+	color: #333;
+	background-color: #27ae60;
+	transition: .4s;
+}
+
+.portfolio-flexbox {
+	display: flex;
+	flex-direction: column;
+}
+
+.portfolio-item {
+	padding: 40px 0;
+	margin-bottom: 20px;
+	background-color: #333;
+	color: #27ae60;
+	border-radius: 5px;
+}
+
+.portfolio-item img {
+	width: 80%;
+	max-width: 816px;
+	border-radius: 5px;
+	margin: 30px auto;
+	transition: .9s;
+	-webkit-filter: grayscale(100%);
+	transform: scale(.8);
+}
+
+.portfolio-item a img:hover {
+	transform: scale(1);
+	transition: .2s;
+	-webkit-filter: grayscale(0%);
+	border-radius: 10%;
+}
+
+.portfolio-item p {
+	width: 80%;
+	margin: auto;
+}
+
+/* ########  SECTION-CURRICULUM   ########### */
+
+
+
+.section-curriculum {
+	padding: 80px 0 10px;	
+}
+
+.section-curriculum-content {
+	width: 90%;
+	margin: 0 auto;
+	max-width: 1440px;
+}
+
+.img-papers {
+	padding: 60px 0;
+	max-width: 378px;
+	width: 50%;
+}
+
+.curriculum-item {
+	padding: 40px 0;
+}
+
+.curriculum-item h3 + img {
+	padding: 30px 0;
+	max-width: 320px;
+	width: 20%;
+	border-radius: 50%;
+}
+
+.curriculum-item h3 {
+	border-top: 1px solid #ddd;
+	padding-top: 20px;
+
+}
+
+table {
+	width: 95%;
+	margin: auto;
+	text-align: center;
+}
+
+th {
+	padding: 16px 10px;
+	background-color: #27ae60;
+	border: 1px solid #27ae60;
+}
+
+td {
+	padding: 10px;
+	border: 1px solid #27ae60;
+	background-color: rgba(46, 204, 113, .3)
+}
+
+.list-skills {
+	list-style-type: square;
+	text-align: left;
+	margin-left: 15%;
+}
+
+.list-skills li {
+	padding: 10px 0;
+}
+
+.list-skills span {
+	color: #27ae60;
+	font-weight: bold;
+}
+
+
+
+/* ########  SECTION-KONTAKT   ########### */
+
+
+
+.section-kontakt {
+	padding: 200px 0 60px;
+	background: #27ae60;
+	width: 100%;
+	height: 550px;
+	position: relative;
+}
+
+.section-kontakt:before {
+	content: "";
+	position: absolute;
+	background-color: #27ae60;
+	top:0;
+    left:0;
+    width: 0; 
+    height: 0;
+    border-top: 100px solid #eee; 
+    border-right: 2000px solid transparent; 	
+}
+
+.section-kontakt-content,
+.section-kontakt p {
+	width: 90%;
+	margin: 0 auto 40px;
+}
+
+.section-kontakt-content h3 {
+	padding-bottom: 40px;
+}
+
+
+/* ***** social-icons styles ***** */ 
+.icon {
+	display: inline-block;
+	vertical-align: top;
+	overflow: hidden;
+	margin: 4px;
+	width: 96px;
+	height: 96px;
+	font-size: 0;
+	text-indent: -9999px;
+
+}
+
+.icon-nudge {
+	position: relative;
+	background: url('../images/logo.png');
+	-webkit-transition: 0.2s;
+		    transition: 0.2s;
+		    background-color: #555;
+}
+
+.icon-nudge::after {
+	display: block;
+	position: absolute;
+	bottom: 0;
+	left: 0;
+	width: 100%;
+	height: 0;
+	content: "";
+	-webkit-transition: height 0.2s;
+		    transition: height 0.2s;
+}
+
+.icon-nudge:hover::after {
+	height: 8px;
+}
+
+/* facebook */
+.icon-nudge.facebook {
+  	background-position: 0 0;
+}
+
+.icon-nudge.facebook:hover {
+  	background-position: 0 -8px;
+  	background-color: #3b5998;
+}
+
+.icon-nudge.facebook::after {
+  	background-color: #1e2e4f;
+}
+
+/* gmail */
+.icon-nudge.gmail {
+	background-position: -98px 0;
+}
+
+.icon-nudge.gmail:hover {
+	background-color: #dd4b39;
+	background-position: -98px -8px;
+}
+
+.icon-nudge.gmail::after {
+	background-color: #86291d;
+}
+
+/* blogspot */
+
+.icon-nudge.blogspot {
+	background-position: -192px 0;
+}
+
+.icon-nudge.blogspot:hover {
+	background-color: #ee802f;
+	background-position: -192px -8px;
+}
+
+.icon-nudge.blogspot::after {
+	background-color: #a9500e;
+}
+
+/* git */
+
+.icon-nudge.git {
+	background-position: -288px 0;
+}
+
+.icon-nudge.git:hover {
+	background-color: #333333;
+	background-position: -288px -8px;
+}
+
+.icon-nudge.git::after {
+	background-color: #4d4d4d;
+}
+
+.section-kontakt span {
+	background-color: #555;
+	color: #27ae60;
+	padding: 10px;
+	padding-right: 0;
+	border-radius: 5px;
+}
+
+
+
+
+
+/* ########  MEDIA-QUERIES   ########### */
+
+@media all and (min-width: 27em) {
+	.main-heading h1 {
+		font-size: 17vw;
+}
+	.main-header img {
+		padding: 20px 0;
+}
+} 
+
+@media all and (min-width: 35em) {
+	.main-heading h1 {
+		font-size: 6em;
+}
+} 
+
+@media all and (min-width: 49em) {
+	.main-heading h1 {
+		font-size: 8em;
+}
+	.section-about-content {
+		width: 80%;
+		position: relative;
+}
+	.description {
+		float: right;
+		width: 60%;
+		margin: 80px 0;
+		text-align: right;
+
+	}
+
+	.section-about-content img {
+		position: absolute;
+		left: 0;
+		max-width: 35%;
+		top: 20%;
+	}
+
+	blockquote {
+		margin-top: 100px;
+	} 
+
+	.img-portfolio {
+		width: 30%;
+		margin: 80px 0;
+}
+	.portfolio-flexbox {
+		flex-direction: row;
+		justify-content: space-around;
+}
+	.portfolio-item {
+		width: 30%;	 
+}
+
+	.img-papers {
+		width: 20%;
+}
+
+	.education {
+		position: relative;
+	}
+
+	.education img {
+		position: absolute;
+		left: 0;
+		max-width: 30%;
+		top: 120px;
+	}
+
+	.table-education {
+		float: right;
+		width: 70%;
+		margin-top: 40px;
+	}
+
+
+	.experience {
+		position: relative;
+	}
+
+	.experience img {
+		position: absolute;
+		right: 0;
+		max-width: 30%;
+		top: 120px;
+	}
+
+	.table-experience {
+		float: left;
+		width: 70%;
+		margin-top: 40px;
+	}
+
+	.skills {
+		position: relative;
+		padding-bottom: 60px;
+	}
+
+	.skills img {
+		position: absolute;
+		left: 50px;
+		max-width: 40%;
+		top: 140px;
+	}
+
+	.list-skills {
+		float: right;
+		width: 50%;
+		margin-top: 80px;
+	}
+
+
+	.curriculum-item {
+		width: 80%;
+		margin: auto;
+}
+
+	
+
+
+} 
+
+@media all and (max-width: 75em) and (min-width: 49em) {
+	.main-heading {
+		padding: 10px 0;
+}
+	.main-heading h1 {
+		margin: 50px 0;
+	}
+
+}
+
+@media all and (min-width: 72em) {
+	.section-about-content img {
+		top: 10%;
+	}
+
+} 

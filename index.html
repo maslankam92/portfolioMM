@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="pl">
+
+	<head>
+		<title>PORTFOLIO Marcin Maślanka</title>
+		<meta charset="utf-8" />
+		<meta name="description" content"Strona przedstawia portofio Marcina Maślanki, ciągle uczącego się front-end developera." />
+		<meta name="keywords" content="portfolio, front-end development, HTML, CSS, JavaScript, jQuery" />
+		<meta name="viewport" content="width=device-width, initial-scale=1" />
+		<link href="css/reset.css" rel="stylesheet" type="text/css" />
+		<link href="css/style.css" rel="stylesheet" type="text/css" />
+		<link href='https://fonts.googleapis.com/css?family=Squada+One' rel='stylesheet' type='text/css' />
+		<link href='https://fonts.googleapis.com/css?family=Comfortaa|Lobster|Squada+One|Roboto+Condensed' rel='stylesheet' type='text/css'>
+	</head>
+
+	<body>
+
+		<ol class="navigation">
+					<li class="nav-item"><a href="#about">O MNIE</a></li>
+					<li class="nav-item"><a href="#portfolio">PORTFOLIO</a></li>
+					<li class="nav-item"><a href="#curriculum">CURRICULUM</a></li>
+					<li class="nav-item"><a href="#contact">KONTAKT</a></li>
+				</ol>
+
+				<input type="checkbox" id="nav-trigger" class="nav-trigger" />
+				<label for="nav-trigger"></label>
+
+		<div class="wrapper">
+
+			<div class="main-header">	
+				<h1 id="logo"><a href="#">MM</a></h1>
+						
+				<div class="main-heading">
+					<h1>Marcin Maślanka</h1>
+					<p>PORTFOLIO</p>
+				</div>
+				<img src="images/arrow-down2.png" alt="strzałka w dół" />	
+			</div>
+
+			<div class="section-about">
+				<div class="section-about-content clearfix">
+					<h2 id="about">O MNIE</h2>
+					<img src="images/marcin.jpg" alt="Marcin"/>
+					<div class="description">
+						<p>Jestem <span>Marcin</span>, mam 23 lata i pochodzę z Bielska-Białej, pięknego miasta, leżącego u podnóża Beskidu Śląskiego. Nie chodzę dużo po górach, za to uwielbiam zimę i jazdę na <span>snowboardzie</span>.</p><br>
+						<p>Kiedyś trenowałem siatkówkę przez wiele lat, jednak obecnie rekreacyjnie już gram w piłkę nożną, biegam i jeżdżę na rowerze. Jestem wielkim fanem <span>podróżowania</span>, a przy okazji uchwytywania pięknych miejsc na kliszy - elektronicznej ;).</p><br>
+						<p>Ponadto interesuję się <span>nowymi technologiami</span>, nie tylko z zakresu komputerów i Internetu. Można więc powiedzieć, że jestem gadżeciarzem prowadzącym aktywny styl życia, który nie potrafi wysiedzieć w jednym miejscu.</p>
+
+						<blockquote><em>Nie mam aspiracji, żeby być bogatym. Mam aspirację, żeby być mądrym.</em><br><br><span class="overline">Jakub B. Bączek</span></blockquote>
+					</div>
+				</div>
+			</div>
+
+			<div class="section-portfolio">
+				<div class="section-portfolio-content">
+					<h2 id="portfolio">PORTFOLIO</h2>
+					<img src="images/portfolio.png" alt="Gallery" class="img-portfolio"/>
+					<div class="portfolio-flexbox">
+						<div class="portfolio-item">
+							<h3>Strona WWW</h3>
+							<a href="#papers"><img src="images/item1.jpg" /></a>
+							<p>Strona internetowa została wykonana na zlecenie agencji reklamowej. Do projektu zostały wykorzystane takie technologie jak: HTML5, CSS3, Bootstrap, jQuery.</p>
+							<a href="#" class="btn-view">Zobacz</a>
+						</div>
+						<div class="portfolio-item">
+							<h3>Aplikacja Internetowa</h3>
+							<a href="#"><img src="images/item2.jpg" /></a>
+							<p>Pierwsza aplikacja internetowa, która w szybkim tempie zyskała popularność wśród zarówno młodszych, jak i tycg dorosłych użytkowników Internetu.</p>
+							<a href="#" class="btn-view">Zobacz</a>
+						</div>
+						<div class="portfolio-item">
+							<h3>Projekt Open Source</h3>
+							<a href="#"><img src="images/item3.jpg" /></a>
+							<p>Projekt, ze względu na dużą ilość developerów oraz obszerną strukturę, nie jest jeszcze ukończony, ale już w tym momencie robi się o nim coraz głośniej.</p>
+							<a href="#" class="btn-view">Zobacz</a>
+						</div>
+					</div>
+				</div>
+			</div>
+
+			<div class="section-curriculum">
+				<div class="section-curriculum-content">
+						<h2 id="curriculum">CURRICULUM</h2>
+						<img src="images/curriculum.png" class="img-papers" alt="Papers" />
+					<div class="curriculum-item education clearfix">
+						<h3>Edukacja</h3>
+						<img src="images/education.png" alt="suitcase" />
+		
+						<table class="table-education">
+							<tr>
+								<th scope="col">rok</th>
+								<th scope="col">placówka</th>
+								<th scope="col">typ</th>
+							</tr>
+							<tr>
+								<td>2015 - 2017</td>
+								<td>Uniwersytet Ekonomiczny w Krakowie</td>
+								<td>Zarządzanie Projektami - studia magisterskie</td>
+							</tr>
+							<tr>
+								<td>2011 - 2014</td>
+								<td>Uniwersytet Ekonomiczny w Krakowie</td>
+								<td>Międzynarodowe Stosunki Gospodarcze - studia licencjackie</td>
+							</tr>
+							<tr>
+								<td>2008 - 2011</td>
+								<td>IV Liceum Ogólnokształcące im. KEN</td>
+								<td>profil matematyczno-geograficzny</td>
+							</tr>
+						</table>
+					</div>
+					<div class="curriculum-item experience clearfix">
+						<h3>Doświadczenie zawodowe</h3>
+						<img src="images/experience.png" alt="chart" />
+						<table class="table-experience">
+							<tr>
+								<th scope="col">okres</th>
+								<th scope="col">opis</th>
+								<th scope="col">miasto/państwo</th>
+							</tr>
+							<tr>
+								<td>10/2014 - 04/2015</td>
+								<td>Kelner w restauracji hotelowej</td>
+								<td>Jasper, Alberta, Kanada</td>
+							</tr>
+							<tr>
+								<td>06/2014 - 09/2014</td>
+								<td>Line server restauracji hotelowej</td>
+								<td>Grand Canyon, Arizona, USA</td>
+							</tr>
+							<tr>
+								<td>08/2013 - 09/2013</td>
+								<td>Pracownik liniowy w fabryce czekolady</td>
+								<td>Vassen, Holandia</td>
+							</tr>
+							<tr>
+								<td>07/2012 - 08/2012</td>
+								<td>Pracownik w fabryce ciastek i czekolady</td>
+								<td>Kortrijk, Belgia</td>
+							</tr>
+						</table>
+					</div>
+					<div class="curriculum-item skills clearfix">
+						<h3>Umiejętności</h3>
+						<img src="images/skills.png" alt="cog" />
+						<ul class="list-skills">
+							<li>Prawo jazdy: <span>kat.B</span></li>
+							<li>Język angielski: <span>bardzo dobry w mowie i piśmie</span></li>
+							<li>Język francuski: <span>podstawowy w mowie i piśmie</span></li>
+							<li>Front-end development: <span>początkujący</span></li>
+							<li>Inne: <span>pracowitość, szczegółowość, perfekcjoznim</span></li>
+						</ul>
+					</div>
+				</div> 
+			</div>
+
+			<div class="section-kontakt">
+				<div class="section-kontakt-content">
+					<h3 id="contact">KONTAKT</h3>
+					<a href="http://www.facebook.com" target="_blank" class="icon icon-nudge facebook">facebook</a>
+					<a href="mailto:maslankam92@gmail.com?Subject=Portfolio%20enquiry" target="_blank" class="icon icon-nudge gmail">gmail</a>
+					<a href="http://www.born-to-rage.blogspot.com" target="_blank" class="icon icon-nudge blogspot">blogger</a>
+					<a href="https://github.com/maslankam92" target="_blank" class="icon icon-nudge git">git</a>
+				</div>
+				<p>Zaprojektowane z &lt3 przez <strong>Marcin Maślanka</strong>.</p>
+				<p><span>&copy2015<span></p>
+			</div>
+		</div>
+	</body>
+
+</html>
